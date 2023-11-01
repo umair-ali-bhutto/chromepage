@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome, Umair Ali Bhutto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #282c34;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        #loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #logo {
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .hidden {
+            display: none;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 600px;
+            margin: 20px;
+        }
+        .box {
+            text-align: center;
+            background: #3498db;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .box:hover {
+            background: #217dbb;
+            transform: scale(1.05) rotate(3deg);
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="https://lh3.googleusercontent.com/fife/AK0iWDyxThkxkIhdeLIxYwdmsn_zpt3TwUA_86TnyBSolLSTieZqdE8iAQidUcw8GEAsb6uZZ5v5lBZTna9_JjEjJYCPvmZsT4GTV9VZV9DWzVMe0tYZADy_uFmkYrEn8TGPZRXrmQy2qFRYnE7us9p6gSGa8yAJtJRXl-M1j3s8VzBRCZ8cKgBNy-20ut5QrQm1dWmFStp-sodrUNlq_MMKGuveuEk1GJ9lmVGEZHnIdkgMrD5Ju4Qg-kkrCINU-lR61dWEMOE7xvkjfDvs1Y4V4zmxw3zEtCRih5og90q8hRTY1-dx2VWoDA_IyUiihY0gD5v9TJzdzutntJntCy_9auRGmCES1VrS2Zkl_BEIDi7nbhFRMqrpHCfwV4A8HL0NjNtPO7U6RtgBf87bLdbpj-oS4sxTPNlFjeP5igGbEejDsUPmUt2SlF-QimIX50q1XiZ2tmxe2uZtfy-KQoF4owa3UJNVchAUGkKhoCeY5hD3BQTWyT06DOWe2ZcJ40DJaV-hoHURsOtMGlNiyXpXxqQd06hfaXpuJ3-g53K9fBCiIXNVt1nkkNz4Cy_OLIDwYq54gMWZ9yyF0PaF9sP64hoP2qWeKoeKFYUgnlZFPwpOuiK9pgMFeeA6HEXPQxoeVvzewOW7sUWE7v6FI8oj6IXQWqk9k0WQWNTKZb-n7s8djMh6GSwRYFbVRFIDOaO6aRNva0tk8pY7UBBbAqc9Az6PLVzNpjPDfvldZ_Fw1pz6xf72pzIf7qyiGgby9DOAx7MGpWW99ysQKmqGIBjvQELwpqHXpXV75d-i3xNNlG-PLP1J-uUlSCPescaN5B0eKizZ4kXpeZ1vIXVLDNRix_Dlg-4OqMzJUA5IhhzQ6dCHGVIzvgA584__5h25NZZdtfbsXWqN1RrCquvXVfW97tXmKjMBdOx13ClwMRV5iDOUDPrQJ6owuIE671C65xrs8xkY7hfj8pDZ0Az0NBy9xMnUw7tPIWY5egGfCpeLs3BGTUk2Z2xFyrhHU1DPHuzBVzl3wyFtYeEupMR5W7rrJi_gvqmRg7axT2VluNHJxen5xVO0o1sfNaeq27vqIqA2ttdokZehmLAckpegMgJjUfD1GMxB7xosdw2EqopQRD89kKZ1layXT_ICsmvMO-ROMeVP8G9fMFBDlwYovxEjKZifZ93vI5RpiCta47zLqIhj6wH2dlM_PB26e86y4v9biarOgxskcCNUVwdt45YdH0AT4LT4mhVTXZQeLO75Ia9UOR52ATxzY2SkXsooe8Ni_3VkQOMMdF74qHQ2qXZ9RCahNCzszGuIfqaeIO8kGG9EkRPNsl3-ZMQmRJZtpUK30G80SXAUhHD9qqA8FYnBM2njBdssBNtCzi29cMYSJxovs4Bby0B9MzGtGlAN-ACywwoN_7ig3NXIZsLqEzcq79EUxVYiP_sP0HmSAQ=s32-c" alt="Your Picture">
+    <div id="loader"></div>
+    <div class="hidden" id="content">
+        <div class="container">
+            <a class="box" href="https://www.youtube.com/">YouTube</a>
+            <a class="box" href="https://www.netflix.com/">Netflix</a>
+            <a class="box" href="https://web.whatsapp.com/">WhatsApp Web</a>
+            <a class="box" href="https://web.whatsapp.com/">WhatsApp Web</a>
+            <a class="box" href="https://web.whatsapp.com/">WhatsApp Web</a>
+        </div>
+    </div>
+    <script>
+        // Simulate a loading process and hide the loader when the page is ready.
+        window.addEventListener('load', function() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        });
+    </script>
+</body>
+</html>
